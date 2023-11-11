@@ -1,0 +1,41 @@
+@import '../../Styles/colors.scss';
+
+.header {
+    background-color: $primary;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5em;
+
+    &_logo{
+        margin : 1em 0 0 1em ; 
+        @media (min-width : 968px) {
+            margin: 3em 0 0 6em;
+            width: 15em;
+        }
+        
+    }
+    &_nav{
+        display: flex;
+        flex-direction: column;
+        
+        @media (min-width : 968px) {
+        margin-right: 50px;
+        flex-direction: row;
+        }
+    }
+    &_link{
+        text-decoration: none;
+        color: black;
+        margin-top: 1em;
+        margin-right: 1em;
+        @media (min-width : 968px) {
+            margin-right: 20px;
+            font-size: 1.5em;
+        }
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

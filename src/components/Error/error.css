@@ -1,0 +1,19 @@
+.error-title {
+  font-size: 15em;
+  color: #8bc7b1;
+  text-align: center;
+}
+
+.error-sub-title {
+  color: #8bc7b1;
+  font-size: 3em;
+  text-align: center;
+}
+
+.link {
+  color: #c5a073;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
+}/*# sourceMappingURL=error.css.map */

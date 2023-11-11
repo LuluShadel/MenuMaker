@@ -1,0 +1,36 @@
+.card {
+  background-color: white;
+  height: 10em;
+  width: 20em;
+}
+.card .point {
+  background-color: #c5a073;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+.card .number {
+  font-size: 2em;
+  position: relative;
+  right: -280px;
+  color: #c5a073;
+}
+.card p {
+  margin: 1.2em 2em 2em 2em;
+}
+
+.cardLanding {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+}
+@media (min-width: 968px) {
+  .cardLanding {
+    flex-direction: row;
+    margin-top: 5em;
+  }
+}/*# sourceMappingURL=card-landing.css.map */

@@ -1,0 +1,40 @@
+@import '../../Styles/colors.scss';
+
+
+.card{
+   background-color: white;
+   height: 10em;
+   width: 20em; 
+
+
+.point{
+    background-color:$point ;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.number {
+    font-size: 2em;
+    position: relative;
+    right: -280px;
+    color: $point;
+}
+p{
+    margin:1.2em 2em 2em 2em;
+}
+}
+
+.cardLanding {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    
+    @media (min-width:968px){
+        flex-direction: row;
+        margin-top: 5em;
+    }
+    }
