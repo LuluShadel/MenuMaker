@@ -1,4 +1,4 @@
-
+import { useAuth0 } from "@auth0/auth0-react";
 
 import Landing from "../../components/landing"
 import CardLanding from "../../components/card-landing"
@@ -7,19 +7,24 @@ import photoRestaurant1 from "../../assets/michelle-williams-yT69l1ubYhE-unsplas
 import photoRestaurant2 from "../../assets/nienke-broeksema-_hiPJ6Z0vao-unsplash 1.png"
 
 import "./home.css"
+import Header from "../../components/header"
 
 function Home () {
 
 
-
+  
+  const { loginWithRedirect } = useAuth0();
 
   return (
     <div className="App">
+      <Header />
       <Landing
       title="Réalisez et diffusez votre menu personnalisé"
       text="Grâce à Menu Maker, donnez à votre établissement sa propre identité. créez votre menu en ligne et partagez-le sur toutes les platerformes ! "
       buttonText='Se connecter'
       buttonStyle='button'
+      onClick={() => loginWithRedirect()}
+      
 
       img={photoMenu} />
       < Landing 
