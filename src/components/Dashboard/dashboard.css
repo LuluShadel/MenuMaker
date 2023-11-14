@@ -29,7 +29,7 @@
 }
 @media (min-width: 968px) {
   .dashboard-nav {
-    margin: 3em;
+    margin: 3em 1em;
   }
 }
 .dashboard-nav .dashboard-nav_link {
